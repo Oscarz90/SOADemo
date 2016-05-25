@@ -1,0 +1,32 @@
+<wsdl:definitions
+     name="ObtenerEstatusTarjetaCredito"
+     targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/TarjetaCreditoValidacion/tarjetaCreditoValidacion/ObtenerEstatusTarjetaCredito"
+     xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/TarjetaCreditoValidacion/tarjetaCreditoValidacion/ObtenerEstatusTarjetaCredito"
+     xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/"
+     xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/ObtenerEstatusTarjetaCredito"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+  <plt:partnerLinkType name="ObtenerEstatusTarjetaCredito_plt" >
+    <plt:role name="ObtenerEstatusTarjetaCredito_role" >
+      <plt:portType name="tns:ObtenerEstatusTarjetaCredito_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/ObtenerEstatusTarjetaCredito" schemaLocation="../Schemas/ObtenerEstatusTarjetaCredito_table.xsd" />
+      </schema>
+    </wsdl:types>
+    <wsdl:message name="ObtenerEstatusTarjetaCreditoSelect_inputParameters">
+        <wsdl:part name="ObtenerEstatusTarjetaCreditoSelect_inputParameters" element="top:ObtenerEstatusTarjetaCreditoSelect_numeroTarjetaCreditoInputParameters"/>
+    </wsdl:message>
+    <wsdl:message name="TarjetacreditoinfoCollection_msg">
+        <wsdl:part name="TarjetacreditoinfoCollection" element="top:TarjetacreditoinfoCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="ObtenerEstatusTarjetaCredito_ptt">
+        <wsdl:operation name="ObtenerEstatusTarjetaCreditoSelect">
+            <wsdl:input message="tns:ObtenerEstatusTarjetaCreditoSelect_inputParameters"/>
+            <wsdl:output message="tns:TarjetacreditoinfoCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified"
+            xmlns:xdb="http://xmlns.oracle.com/xdb">
+  <xsd:element name="Peticion">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="numeroTC" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Respuesta">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="estatusTarjetaCredito" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Fallo">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="error" type="string200"/>
+        <xsd:element name="mensaje" type="string200"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:simpleType name="string200">
+  <xsd:restriction base="xsd:string">
+  <xsd:length value="200"></xsd:length>
+  </xsd:restriction>
+  </xsd:simpleType>
+  
+  
+</xsd:schema>
