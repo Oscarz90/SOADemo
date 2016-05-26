@@ -1,0 +1,15 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+      <soap:Body>
+            <ns1:OrdenCompra xmlns:ns1="http://www.example.org">
+                  <ns1:ClienteID>1111</ns1:ClienteID>
+                  <ns1:ID>2121</ns1:ID>
+                  <ns1:NombreProducto>Bluetooth Headset</ns1:NombreProducto>
+                  <ns1:TipoItem>Electronics</ns1:TipoItem>
+                  <ns1:Precio>49.99</ns1:Precio>
+                  <ns1:Cantidad>1</ns1:Cantidad>
+                  <ns1:Estatus>Inicial</ns1:Estatus>
+                  <ns1:TCTipo>Mastercard</ns1:TCTipo>
+                  <ns1:TCNumero>8765-8765-8765-8765</ns1:TCNumero>
+        </ns1:OrdenCompra>
+    </soap:Body>
+</soap:Envelope>

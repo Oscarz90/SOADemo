@@ -1,0 +1,22 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<wsdl:definitions
+     name="OrdenCompraService"
+     targetNamespace="http://oracle.com/sca/soapservice/ProcesamientoOrdenesCompra/ProcesamientoOrdenesCompra/OrdenCompraService"
+     xmlns:tns="http://oracle.com/sca/soapservice/ProcesamientoOrdenesCompra/ProcesamientoOrdenesCompra/OrdenCompraService"
+     xmlns:inp1="http://www.example.org"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+    <wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:import namespace="http://www.example.org" schemaLocation="../Schemas/OrdenCompra.xsd"/>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="requestMessage">
+        <wsdl:part name="Peticion" element="inp1:OrdenCompra"/>
+    </wsdl:message>
+    <wsdl:portType name="execute_ptt">
+        <wsdl:operation name="RecibeOrdenCompra">
+            <wsdl:input message="tns:requestMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

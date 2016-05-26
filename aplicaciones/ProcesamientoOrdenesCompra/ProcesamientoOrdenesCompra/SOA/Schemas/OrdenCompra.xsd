@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+  <xsd:element name="OrdenCompra" type="OrdenCompraType">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="OrdenCompraType">
+    <xsd:sequence>
+      <xsd:element name="ClienteID" type="xsd:string"/>
+      <xsd:element name="ID" type="xsd:string"/>
+      <xsd:element name="NombreProducto" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="TipoItem" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Precio" type="xsd:decimal" minOccurs="0"/>
+      <xsd:element name="Cantidad" type="xsd:decimal" minOccurs="0"/>
+      <xsd:element name="Estatus" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="TCTipo" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="TCNumero" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -20,7 +20,24 @@ La aplicación implementa el backend de una aplicacion de _**Procesamiento de or
 
 1. Validación de tarjeta de crédito
 ---
+  _SOADemo\aplicaciones\ValidacionTarjetaCredito_  
 
-Componentes SOA requeridos:
+  Este componente deberá validar en base de datos si el numero de tarjeta proporcionado es válido.
+
+**Componentes SOA requeridos:**
 + Oracle JCA Adapters : SOAP Adapter, DB Adapter.
 + Oracle Mediator.
++ Weblogic : configuracion jdbc.
++ Weblogic : configuracion pool de conexiones.
+
+1. Guardar orden de compra en un directorio.
+---
+  _SOADemo\aplicaciones\ValidacionTarjetaCredito_  
+
+  Este componente deberá validar en base de datos si el numero de tarjeta proporcionado es válido.
+
+**Componentes SOA requeridos:**
++ Oracle JCA Adapters : File Adapter.
++ Oracle Mediator.
++ Weblogic : configuracion jdbc.
++ Weblogic : configuracion pool de conexiones.
