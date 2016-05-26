@@ -9,7 +9,7 @@
                   <ns1:Cantidad>1</ns1:Cantidad>
                   <ns1:Estatus>Inicial</ns1:Estatus>
                   <ns1:TCTipo>Mastercard</ns1:TCTipo>
-                  <ns1:TCNumero>8765-8765-8765-8765</ns1:TCNumero>
+                  <ns1:TCNumero>1234-1234-1234-1234</ns1:TCNumero>
         </ns1:OrdenCompra>
     </soap:Body>
 </soap:Envelope>
