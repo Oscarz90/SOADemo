@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.0.31" id="OrdenType"
+          Package="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask"
+          BeanClass="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask.OrdenType" isJavaBased="false">
+  <Attribute Name="IdCliente" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.example.org"/>
+        <Property Name="nextSibling" Value="IdOrden"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Id Cliente"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="IdCliente"/>
+        <Property Name="targetNamespace" Value="http://www.example.org"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="IdOrden" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.example.org"/>
+        <Property Name="nextSibling" Value="NombProd"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Id Orden"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="IdOrden"/>
+        <Property Name="targetNamespace" Value="http://www.example.org"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="NombProd" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.example.org"/>
+        <Property Name="nextSibling" Value="ItemTipo"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Nomb Prod"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="NombProd"/>
+        <Property Name="targetNamespace" Value="http://www.example.org"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="ItemTipo" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.example.org"/>
+        <Property Name="nextSibling" Value="Precio"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Item Tipo"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="ItemTipo"/>
+        <Property Name="targetNamespace" Value="http://www.example.org"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="Precio" Type="java.math.BigDecimal">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.example.org"/>
+        <Property Name="nextSibling" Value="NumeroPiezas"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Precio"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="Precio"/>
+        <Property Name="targetNamespace" Value="http://www.example.org"/>
+        <Property Name="type" Value="java.lang.BigDecimal"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="NumeroPiezas" Type="java.math.BigDecimal">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.example.org"/>
+        <Property Name="nextSibling" Value="EstatusOrden"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Numero Piezas"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="NumeroPiezas"/>
+        <Property Name="targetNamespace" Value="http://www.example.org"/>
+        <Property Name="type" Value="java.lang.BigDecimal"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="EstatusOrden" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace" Value="http://www.example.org"/>
+        <Property Name="nextSibling" Value="TCInformacion"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Estatus Orden"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="EstatusOrden"/>
+        <Property Name="targetNamespace" Value="http://www.example.org"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <AccessorAttribute id="TCInformacion" IsCollection="true"
+                     BeanClass="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask.TCInfo"
+                     CollectionBeanClass="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask.TCInfo_TCInformacion_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="TC Informacion"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="TCInformacion"/>
+      <Property Name="targetNamespace" Value="http://www.example.org"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

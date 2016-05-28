@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.0.31"
+          id="AprobacionManualOrdenesCompraHumantaskPayloadType"
+          Package="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask"
+          BeanClass="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask.AprobacionManualOrdenesCompraHumantaskPayloadType"
+          isJavaBased="false">
+  <AccessorAttribute id="Orden" IsCollection="true"
+                     BeanClass="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask.OrdenType"
+                     CollectionBeanClass="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask.OrdenType_Orden_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Orden"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="Orden"/>
+      <Property Name="targetNamespace" Value="http://www.example.org"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

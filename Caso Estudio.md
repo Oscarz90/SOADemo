@@ -12,6 +12,7 @@ La aplicación implementa el backend de una aplicacion de _**Procesamiento de or
 4.El estado de los pedidos aprobados se establecerá como _"**aprobado**"_.  
 5.El estado de ordenes grandes con una tarjeta de crédito invalida se establecerá como _"**tarjetaCreditoInvalida**"_.  
 6.El estatus de las ordenes grandes rechazadas por el representante del servicio al cliente se establecerá como _"**rechazada**"_.  
+7. Cuando el tiempo de aprobacion manual expira se debe guardar el estatus de la orden en _"**expirada**"_.
 7.Todas las ordénes aprovadas son enviadas al servicio de "**Seguimiento de pedidos**" el cual usa el monto de la orden para determinar la compañia de envío para la orden.  
 + Ordenes **debajo** de **$1,000.00** se envia a través de **_USPS_**.  
 + Ordenes **mayores o igual** a **$1,000.00** y **menores** a **$5,000.00** se envían a través de **_UPS_**.  

@@ -14,7 +14,7 @@
       <xsd:element name="ItemTipo" type="xsd:string" minOccurs="0"/>
       <xsd:element name="Precio" type="xsd:decimal" minOccurs="0"/>
       <xsd:element name="NumeroPiezas" type="xsd:decimal" minOccurs="0"/>
-      <xsd:element name="EstatusProducto" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="EstatusOrden" type="xsd:string" minOccurs="0"/>
       <xsd:element name="TCInformacion" type="TCInfo" minOccurs="0"/>
     </xsd:sequence>
   </xsd:complexType>

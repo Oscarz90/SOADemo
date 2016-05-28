@@ -42,9 +42,7 @@
          <ns0:NumeroPiezas>
             <xsl:value-of select="/ns0:OrdenCompra/ns0:Cantidad"/>
          </ns0:NumeroPiezas>
-         <ns0:EstatusProducto>
-            <xsl:value-of select="/ns0:OrdenCompra/ns0:Estatus"/>
-         </ns0:EstatusProducto>
+         <ns0:EstatusOrden>aprobado</ns0:EstatusOrden>
          <ns0:TCInformacion>
             <ns0:numeroTarjeta>
                <xsl:value-of select="/ns0:OrdenCompra/ns0:TCNumero"/>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration" version="12.2.1.0.31" id="DataControls"
+                    Package="aprobacionmanualordencompra">
+  <AdapterDataControl id="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask"
+                      FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.bpel.services.datacontrol.XSDDataControlDefinition" SupportsTransactions="true"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false"
+                      Definition="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask"
+                      BeanClass="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task"
+                      SchemaLocation="file:/C:/Users/desarrollo8/Oscar/Repositorios/SOADemo/aplicaciones/ProcesamientoOrdenesCompra/ProcesamientoOrdenesCompra/SOA/Schemas/AprobacionManualOrdenesCompraHumantaskWorkflowTask.xsd"
+                      RootElement="task" rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task"
+                      taskLoc="../ProcesamientoOrdenesCompra/SOA/HumanTasks/AprobacionManualOrdenesCompraHumantask.task"
+                      InitiationTask="false" DocumentStoreConfiguration="false"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>
