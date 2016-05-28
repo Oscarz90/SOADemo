@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.0.31" id="actionType_systemActions_Operations"
-          Package="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask"
-          BeanClass="AprobacionManualOrdenCompra_AprobacionManualOrdenesCompraHumantask.actionType_systemActions_Operations"
-          isJavaBased="false">
-  <BuiltinOperation id="CreateInsert"/>
-  <BuiltinOperation id="Delete"/>
-</JavaBean>
